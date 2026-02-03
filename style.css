@@ -1133,6 +1133,30 @@ body{
     .card_cointainer{
         grid-template-columns: 1fr;
     }
+    .card{
+        height: 320px;
+        width: 260px;
+    }
+    .card .cover{
+        height: 160px;
+    }
+    .card .cover img{
+        height: 160px;
+    }
+    /* .card_blur{
+        filter: blur(0);
+    } */
+    .card .title{
+        font-size: 22px;
+        margin-top: 12px;
+    }
+    .card .desc{
+        font-size: 14px;
+    }
+    .card button{
+        height: 32px;
+        margin-top: 12px;
+    }
 }
 @media screen and (max-width : 350px){
     .riboon1{
