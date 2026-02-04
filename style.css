@@ -677,7 +677,7 @@ body{
 
 .hero3{
     width: 100%;
-    padding-bottom: 44px;
+    padding-bottom: 34px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -813,6 +813,32 @@ body{
     pointer-events: none;
 }
 
+.hero3_button{
+    
+    margin-top: 32px;
+}
+
+.hero3_button button{
+    width: 120px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.392);
+    border-radius: 10px;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-family: "Bungee", sans-serif;
+    
+    transition: ease-in 0.3s ;
+
+}
+.hero3_button button:hover{
+    background-color: rgb(255, 238, 0);
+    border: 3px solid rgb(255, 255, 255);
+    color: black;
+
+}
+
+
 .loader{
     position: fixed;
     top: 0%;
@@ -824,6 +850,7 @@ body{
     justify-content: center;
     z-index: 1000000; 
     animation: hideLoader 5s forwards ease-in-out;
+    display: none;
 }
 .loader img{
     height: 120px;
@@ -847,6 +874,218 @@ body{
   }
 
 }
+
+.hero4{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    background:  radial-gradient(circle at top center, #051cca 0%, #000000 50%);;
+    /* background-color: red; */
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-top: 4px solid white;
+    
+}
+
+.hero4 .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 260px;
+    background-color: aliceblue;
+    margin-top: 32px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    color: white;
+
+}
+.hero4 .description{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 22px;
+    width: 680px;
+    color: white;
+}
+.team{
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 32px;
+}
+.team .card{
+    width: 240px;
+    height: 300px;
+}
+
+.member_img{
+    width: 110PX;
+    height: 110PX;
+    /* align-self: center; */
+    justify-self: center;
+    margin-top: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.member_img img{
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name{
+    background-color: rgb(48, 9, 240);
+    text-align: center;
+    margin-top: 22px;
+    padding: 2px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.member_tag{
+    width: 150px;
+    height: 34px;
+    background-color: #ffd500;
+    align-self: center;
+    margin-top: 28px;
+    justify-self: center;
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+}
+
+.member_tag h4{
+    font-size: 11px;
+    /* font-family: "Bungee", sans-serif; */
+    color: rgb(0, 0, 0);
+
+}
+.banner2 {
+    width: 100%;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+}
+.wrapper2 {
+    width: 90%;
+    max-width: 1536px;
+    position: relative;
+    height:65px;
+    z-index: 12;
+    padding: 0;
+    border-bottom: solid 1px white;
+    border-top: solid 1px white;
+
+    /* background-color: red; */
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+.items {
+    width: 200px;
+    height: 50px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 6px;
+    margin-top: 5px;
+    position: absolute;
+    right: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft1;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scrollLeft1 {
+    to {
+        right: -200px;
+    }
+}
+
+.items1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.items2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.items3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.items4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.items5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.items6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.items7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.items8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.items img {
+    height: 110px;
+    width: 150px;
+
+
+}
+
+.hero5{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
 @media screen and (max-width : 880px) {
     .nav {
         display: none;
@@ -1047,7 +1286,43 @@ body{
     .card_cointainer{
         grid-template-columns:  1fr 1fr;
     }
+    .team{
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr; */
+        
 
+    }
+    .team .card{
+        width: 220px;
+        height: 280px;
+        margin-top: 42px;
+    }
+    .name{
+        margin-bottom: 17px;
+    }
+    .member_tag{
+        margin-top: 30px;
+        margin-bottom: 1px;
+    }
+    .team :nth-child(3){
+        grid-column: 1 / -1;   /* পুরো row জুড়ে নেবে */
+        justify-self: center;  /* মাঝখানে আসবে */
+        margin-top: 1px;
+    }
+    .hero4{
+        height: 805px;
+    }
+    .hero4 .title{
+        width: 160px;
+        font-size: 12px;
+        margin-top: 22px;
+
+    }
+    .hero4 .description{
+        font-size: 18px;
+    }
+   
+    
 }
 @media screen and (max-width : 480px) {
     .hero{
@@ -1188,6 +1463,38 @@ body{
     .card button{
         height: 32px;
         margin-top: 12px;
+    }
+    .hero4{
+        height: 1100px;
+    }
+    .hero4 .title{
+        width: 120px;
+        height: 42px;
+        font-size: 7px;
+        margin-top: 18px;
+        /* background-color: #fff; */
+
+    }
+    .hero4 .description{
+        font-size: 15px;
+        /* background-color: red; */
+        margin-top: 12px;
+    }
+    .team{
+        grid-template-columns: 1fr ;
+        /* grid-template-rows: 1fr; */
+
+    }
+    .team .card{
+        width: 220px;
+        height: 285px;
+        margin-top: 0px;
+    }
+    .member_tag{
+        margin-top: 20px;
+    }
+    .team :nth-child(3){
+    justify-self: center;  /* মাঝখানে আসবে */
     }
 }
 @media screen and (max-width : 350px){
