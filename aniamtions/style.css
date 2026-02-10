@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    height: 440px;
+    width: 440px;
+    /* background-color: red; */
+    border: 2px black solid;
+    border-radius: 50%; 
+    animation-name: orbit ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+
+
+}
+@keyframes orbit {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+.item{
+    width: 42px;
+    height: 42px;
+    background-color: rgb(157, 255, 0);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: orbit ;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+.object{
+    top: 20%;
+    left: 2%;
+}
+.object2{
+    top: -3%;
+    left: 60%; 
+}
+.object3{
+    top: 19%;
+    left: 88%;
+    
+}
+.object4{
+    top: 0%;
+    right: 66%;
+}
+.object5{
+    bottom: 20%;
+    left: 2%;
+}
+.object6{
+
+    bottom: -3%;
+    left: 60%;
+}
+.object7{
+    bottom: 19%;
+    left: 88%
+}
+.object8{
+
+    bottom: 0%;
+    right: 66%;
+}
+.object9{
+
+    bottom: 45%;
+    right: -5%;
+}
+.object10{
+    bottom: 45%;
+    left: -5%;
+}
