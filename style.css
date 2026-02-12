@@ -1546,7 +1546,17 @@ body{
     .hero4 .description{
         font-size: 18px;
     }
-   
+    .contact_details{
+        flex-direction: column;
+    }
+    .form{
+        border-radius: n;
+    }
+
+
+
+
+
     
 }
 @media screen and (max-width : 480px) {
