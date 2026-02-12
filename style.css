@@ -1086,7 +1086,7 @@ body{
 
 .contact_details{
     margin-top: 12px;
-    width: 60%;
+    width: 750px;
     /* height: 320px; */
     justify-self: center;
     display: flex;
@@ -1112,7 +1112,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 350px;
+  width: 350px;
   background-color: #ffe600;
   padding: 20px;
   border-radius: 0px;
@@ -1124,6 +1124,8 @@ body{
 .message {
   color: #355891;
   font-size: 14px;
+  /* resize: none; */
+
 }
 
 .flex {
@@ -1175,6 +1177,7 @@ body{
   outline: 0;
   border: 1px solid #355891;
   border-radius: 5px;
+  resize: none;
 }
 
 .form label .input01 + span {
@@ -1546,11 +1549,31 @@ body{
     .hero4 .description{
         font-size: 18px;
     }
+    .hero5{
+        height: 650px;
+    }
     .contact_details{
         flex-direction: column;
+        height: 500px;  
+        justify-content: flex-start;  
+        align-items: center;
+        padding: 0;
+        width: 420px;    
+    }
+    .contact_details .details{
+        margin-top: 12px;
     }
     .form{
-        border-radius: n;
+        /* border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px; */
+        /* width: 100%; */
+        background-color: rgb(255, 238, 0);
+        width: 420px;
+        margin-top: 50px;
+        border-bottom-left-radius: 22px;
+        border-bottom-right-radius: 22px;
+        
+        
     }
 
 
@@ -1731,7 +1754,21 @@ body{
     .team :nth-child(3){
     justify-self: center;  /* মাঝখানে আসবে */
     }
+    .contact_details{
+        width: 350px;
+        margin-top: 12px;
+    }
+    .form{
+        width: 350px;
+        border-top-right-radius: 0px;
+    }
 }
+
+
+
+
+
+
 @media screen and (max-width : 350px){
     .riboon1{
         display: none;
@@ -1746,4 +1783,5 @@ body{
         font-size: 20px;
     }
     
+
 }
