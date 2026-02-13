@@ -3,6 +3,9 @@
     box-sizing: border-box;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     position: relative;
     background: radial-gradient(at center bottom, #0004ff, #000000);
