@@ -850,7 +850,7 @@ body{
     justify-content: center;
     z-index: 1000000; 
     animation: hideLoader 5s forwards ease-in-out;
-    /* display: none; */
+    display: none;
 }
 .loader img{
     height: 120px;
