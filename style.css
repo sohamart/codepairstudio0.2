@@ -1206,9 +1206,9 @@ footer{
     border-radius: 22px;
 }
 footer p{
-    width: 40vw;
+    width: 60vw;
     text-align: center;
-    font-size: large;
+    font-size: 17px;
 }
 
 @media screen and (max-width : 880px) {
