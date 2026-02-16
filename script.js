@@ -14,7 +14,9 @@ menucross.addEventListener('click', function () {
     mobilemenu.classList.remove('active')
     menucontainer.classList.remove('active')
     animate.classList.remove('active')
-    console.log("clicked")
+    mobilemenu.classList.remove('active')
+
+    // console.log("clicked")
     
 })
 let loginBtn = document.querySelector('.signup button');

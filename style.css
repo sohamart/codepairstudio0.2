@@ -1706,6 +1706,8 @@ footer p {
         left: -100%;
         position: relative;
         z-index: 2;
+        border-bottom-right-radius: 22px;
+        border-top-right-radius: 22px;
 
     }
 
