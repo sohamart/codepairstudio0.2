@@ -22,6 +22,8 @@ let mobileLogin = document.querySelector('.menulogin');
 let popup = document.querySelector('.login-popup');
 let overlay = document.querySelector('.overlay');
 let closeBtn = document.querySelector('.close');
+let profile = document.querySelector('.profile');
+let profile2 = document.querySelector('.nav2 .profile');
 
 // Open from desktop navbar
 loginBtn.addEventListener('click', () => {
@@ -31,6 +33,14 @@ loginBtn.addEventListener('click', () => {
 
 // Open from mobile menu
 mobileLogin.addEventListener('click', () => {
+    popup.classList.add('active');
+    overlay.classList.add('active');
+});
+profile.addEventListener('click', () => {
+    popup.classList.add('active');
+    overlay.classList.add('active');
+});
+profile2.addEventListener('click', () => {
     popup.classList.add('active');
     overlay.classList.add('active');
 });
