@@ -1629,7 +1629,7 @@ footer p {
 
         to {
             opacity: 1;
-            
+
         }
     }
 
@@ -1646,13 +1646,16 @@ footer p {
             width: 100%;
             z-index: 101;
         }
-        75%{
+
+        75% {
             z-index: 100;
         }
+
         /* Step 2: তারপর width 50% হবে */
-        99%{
+        99% {
             z-index: 100;
         }
+
         100% {
             left: 0;
             width: 50%;
@@ -1673,6 +1676,10 @@ footer p {
         left: 0;
         animation: fadeIn 0.9s ease forwards;
         border-right: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .animateddiv {
@@ -1684,11 +1691,12 @@ footer p {
         background: rgb(0, 0, 0);
         z-index: 101;
         border-right: 1px solid white;
-        
-        
+
+
         /* animation: slideExpand 1.5s ease forwards; */
     }
-    .animateddiv.active{
+
+    .animateddiv.active {
         z-index: 101;
         animation: slideExpand 1.5s ease forwards;
 
@@ -1702,45 +1710,86 @@ footer p {
         position: absolute;
         top: 4%;
         right: 4%;
-        fill: white;
+        /* fill: white; */
+        
     }
-    .mobilemenu .cross img{
-       filter: invert(1);
-       width: 32px;
-       height: 32px;
+
+    .mobilemenu .cross img {
+        filter: invert(1);
+        width: 32px;
+        height: 32px;
     }
-    .menulink{
+
+    .menulink {
         margin-top: 42px;
         margin-left: 12px;
         display: flex;
         flex-direction: column;
         gap: 12px;
+        position: absolute;
+        top: 50px;
+        left: 2px;
     }
-    .menulink a{
+
+    .menulink a {
         text-decoration: none;
         color: white;
         font-size: 23px;
 
     }
-    .menulink a:hover{
+
+    .menulink a:hover {
         text-decoration: none;
         color: rgb(255, 238, 0);
-        
+
 
     }
-    .mobilemenu .logo4{
+
+    .mobilemenu .logo4 {
         margin-top: 5px;
         /* background-color: white; */
         width: 60%;
         height: 60px;
         margin-top: 12px;
         margin-left: 12px;
+        position: absolute;
+        top: -3px;
+        left: 1px;
     }
-    .mobilemenu .logo4 img{
+
+    .mobilemenu .logo4 img {
         width: 130px;
         height: 78px;
-        
+
         object-fit: cover;
+    }
+
+    .social-section {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        bottom: 4%;
+        /* margin-left: 16%; */
+        
+    }
+
+    .social-section a {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 16px;
+        transition: 0.3s ease;
+    }
+
+    .social-section a:hover {
+        background: black;
+        color: white;
+        transform: scale(1.1);
     }
 
 }
