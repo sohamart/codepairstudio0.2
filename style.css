@@ -1768,7 +1768,7 @@ footer p {
         display: flex;
         gap: 15px;
         position: absolute;
-        bottom: 4%;
+        bottom: 10%;
         /* margin-left: 16%; */
         
     }
